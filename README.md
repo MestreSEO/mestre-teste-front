@@ -9,11 +9,13 @@ Esse teste tem o intuito de avaliar os seus reais conhecimentos.
 Realize um desenvolvimento cross-browser visando sempre o melhor desempenho.
 
 ### Desenvolver o mesmo em:
-```bash
-HTML5 (linguagem pura, não fazer uso de frameworks com Bootstrap);
+
+HTML5 (linguagem pura, não fazer uso de frameworks como Bootstrap);
+
 CSS3 (pré-processadores são permitidos, de preferência para o SASS);
+
 JavaScript (jQuery é permitido);
-```
+
 
 ## Guia de Desenvolvimento
 
