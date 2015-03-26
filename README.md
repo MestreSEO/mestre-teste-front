@@ -10,7 +10,7 @@ Realize um desenvolvimento cross-browser visando sempre o melhor desempenho.
 
 ### Desenvolver o mesmo em:
 
-HTML5 (linguagem pura, não fazer uso de frameworks como Bootstrap);
+HTML5 (linguagem pura, não fazer uso de frameworks como o Bootstrap);
 
 CSS3 (pré-processadores são permitidos, de preferência para o SASS);
 
