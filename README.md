@@ -29,6 +29,10 @@ O "Slideshow" deve conter 04 imagens;
 
 Se você pudesse dominar uma tecnologia neste ano, qual seria?
 
+Gostaria de dominar JavaScript
+
 Como você desenvolve sua página para browsers com recursos limitados (ex.: IE7)? Quais técnicas/processos você usa?
+Caso tivesse que dar suporte para navegadores com recursos limitados somente para eles eu faria um site mais estatico, iria eliminar recursos não suportados.
 
 Qual o caso de uso típico para funções anônimas?
+Não sei exatamente a resposta.
