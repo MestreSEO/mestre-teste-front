@@ -1,6 +1,6 @@
 // Variables //
 
-$mobile:320px;
+$mobile:640px;
 $tablet:880px;
 $desktop:1280px;
 
@@ -102,33 +102,32 @@ $column_width:120;
 
   .menu > ul > li
   {
-    @include font-size(15);
+    @include font-size(13);
     font-family: 'Myriad Pro';
     color: #fff;
     display: inline-block;
-    margin-left: 1px;
     background-color: #67b6de;
-    width: 100px;
+    width: 70px;
     height: 50px;
     position: relative;
   }
 
   .menu > ul > li:last-child
   {
-    @include font-size(15);
+    @include font-size(13);
     font-family: 'Myriad Pro';
     color: #fff;
     display: inline-block;
     margin-left: 1px;
     background-color: #b64c2e;
     position: relative;
-    width: 150px;
+    width: 100px;
     height: 50px;
   }
 
   .arrow img
   {
-    margin-left: 10px;
+    margin-left: 5px;
     margin-bottom: 1px;
     // float: right;
     padding: 0;
@@ -238,13 +237,11 @@ $column_width:120;
   
   .news
   {
-    text-align: center;
     margin-top: 50px;
   }
 
   .news ul
   {
-    text-align: center;
     width: 100%;
   }
 
@@ -306,6 +303,7 @@ $column_width:120;
     margin: 5px 0;
     border: 1px solid #ccc;
     padding: 5px;
+    border-radius: 5px;
   }
 
   .assunto
@@ -317,6 +315,8 @@ $column_width:120;
    overflow: hidden;
    width: 100%;
    border: 1px solid #ccc;
+   background-color: #fff;
+   border-radius: 5px;
   }
 
   .assunto select
@@ -324,7 +324,7 @@ $column_width:120;
    @include font-size(16);
    font-family: 'Myriad Pro';
    color: #b8b8b8;
-   background: transparent;
+   background-color: #fff;
    border: none;
    height: 40px;
    padding: 5px;
@@ -340,6 +340,8 @@ $column_width:120;
     width: 100%;
     height: 200px;
     margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
   }
 
   .form .enviar
@@ -405,12 +407,12 @@ footer
 
     .menu > ul > li:last-child
     {
-      width: 170px;
+      width: 125px;
     }
 
     .sub-menu-drop li
     {
-      width: 170px;
+      width: 125px;
     }
 
     .slide p
@@ -461,7 +463,8 @@ footer
 
     .news ul li
     {
-      margin-right: 8%;
+      margin-right: 14%;
+
     }
     .news ul li:last-child
     {

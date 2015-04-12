@@ -125,29 +125,28 @@
     margin-top: 30px;
     margin-bottom: 20px; }
   .wrapper .menu > ul > li {
-    font-size: 15px;
-    font-size: 0.9375rem;
+    font-size: 13px;
+    font-size: 0.8125rem;
     font-family: 'Myriad Pro';
     color: #fff;
     display: inline-block;
-    margin-left: 1px;
     background-color: #67b6de;
-    width: 100px;
+    width: 70px;
     height: 50px;
     position: relative; }
   .wrapper .menu > ul > li:last-child {
-    font-size: 15px;
-    font-size: 0.9375rem;
+    font-size: 13px;
+    font-size: 0.8125rem;
     font-family: 'Myriad Pro';
     color: #fff;
     display: inline-block;
     margin-left: 1px;
     background-color: #b64c2e;
     position: relative;
-    width: 150px;
+    width: 100px;
     height: 50px; }
   .wrapper .arrow img {
-    margin-left: 10px;
+    margin-left: 5px;
     margin-bottom: 1px;
     padding: 0; }
   .wrapper .menu ul li a {
@@ -223,10 +222,8 @@
     font-family: 'Myriad Pro';
     line-height: 20px; }
   .wrapper .news {
-    text-align: center;
     margin-top: 50px; }
   .wrapper .news ul {
-    text-align: center;
     width: 100%; }
   .wrapper .news ul li {
     width: 224px;
@@ -268,7 +265,8 @@
     height: 40px;
     margin: 5px 0;
     border: 1px solid #ccc;
-    padding: 5px; }
+    padding: 5px;
+    border-radius: 5px; }
   .wrapper .assunto {
     font-size: 16px;
     font-size: 1rem;
@@ -277,13 +275,15 @@
     height: 40px;
     overflow: hidden;
     width: 100%;
-    border: 1px solid #ccc; }
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px; }
   .wrapper .assunto select {
     font-size: 16px;
     font-size: 1rem;
     font-family: 'Myriad Pro';
     color: #b8b8b8;
-    background: transparent;
+    background-color: #fff;
     border: none;
     height: 40px;
     padding: 5px;
@@ -296,7 +296,9 @@
     padding: 5px;
     width: 100%;
     height: 200px;
-    margin: 5px 0; }
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc; }
   .wrapper .form .enviar {
     margin-top: 20px; }
   .wrapper .share {
@@ -334,9 +336,9 @@ footer {
       right: 0;
       top: 36; }
     .wrapper .menu > ul > li:last-child {
-      width: 170px; }
+      width: 125px; }
     .wrapper .sub-menu-drop li {
-      width: 170px; }
+      width: 125px; }
     .wrapper .slide p {
       z-index: 3;
       position: absolute;
@@ -369,7 +371,7 @@ footer {
       margin-right: auto;
       margin-left: auto; }
     .wrapper .news ul li {
-      margin-right: 8%; }
+      margin-right: 14%; }
     .wrapper .news ul li:last-child {
       margin-right: 0; }
     .wrapper .form {
