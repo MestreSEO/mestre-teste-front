@@ -27,6 +27,50 @@ $(document).ready(function(){
 
   }
 
+  function campoObrigatorio(campo) {
+    if (campo.value.length < 1 || campo.value.defaultValue) {
+
+      return false;
+      $(".name").css('border-color','#000');
+    } else {
+      return true;
+    }
+  }
+  function campoEmail(campo) {
+    if (campo.value.indexOf("@") == -1 || campo.value.indexOf(".") == -1) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
+  window.onload = function() {
+    function validarFormulario(formulario) {
+      for (var i=0; i<qdeCampos; i++) {
+        var controle = formulario.elements[i];
+        if (controle.className.indexOf("obrigatorio") != -1) {
+          if (!campoObrigatorio(controle)) {
+            alert("Por favor preencha o campo" + controle.name + ".");
+            return false;
+
+          }
+        }
+        if (controle.className.indexOf("email") != -1) {
+          if(!campoEmail(controle)) {
+            alert("Por favor forneça um endereço de email válido.");
+            return false;
+
+          }
+        }
+      }
+    }
+    var formulario = document.getElementById("form");
+    var qdeCampos = formulario.elements.length;
+    formulario.onsubmit = function() {
+      return validarFormulario(this);
+    }
+  }
+
 });
 
 window.addEventListener('resize', function(){
@@ -34,13 +78,4 @@ window.addEventListener('resize', function(){
   $('.slide').height(height);   
 });
 
-function doSomething() {
-  var height = $('.slide img').height();
-  $('.slide').height(height); 
-};
 
-var resizeTimer;
-$(window).resize(function() {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(doSomething, 100);
-});
