@@ -50,7 +50,7 @@ $(document).ready(function(){
         var controle = formulario.elements[i];
         if (controle.className.indexOf("obrigatorio") != -1) {
           if (!campoObrigatorio(controle)) {
-            alert("Por favor preencha o campo" + controle.name + ".");
+            alert("Por favor preencha o campo " + controle.name + ".");
             return false;
 
           }
