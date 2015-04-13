@@ -1,5 +1,18 @@
 $(document).ready(function(){
 
+
+  function loadImage() {
+    var preload = new createjs.LoadQueue();
+    preload.addEventListener("fileload", handleFileComplete);
+    preload.loadFile("image/slide01 .jpg");
+    console.log('erick')
+  }
+
+  function handleFileComplete(event) {
+    document.body.appendChild(event.result);
+  }
+
+
   var height = $('.slide img').height();
   $('.slide').height(height);  
 
