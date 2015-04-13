@@ -370,7 +370,7 @@ footer {
       margin-right: auto;
       margin-left: auto; }
     .wrapper .news ul li {
-      margin-right: 14%; }
+      margin-right: 8%; }
     .wrapper .news ul li:last-child {
       margin-right: 0; }
     .wrapper .form {
@@ -390,6 +390,8 @@ footer {
       height: 60px; } }
 @media screen and (min-width: 1280px) {
   .wrapper .header {
-    max-width: 960px; } }
+    max-width: 960px; }
+  .wrapper .news ul li {
+    margin-right: 14%; } }
 
 /*# sourceMappingURL=style.css.map */

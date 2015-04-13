@@ -462,9 +462,10 @@ footer
 
     .news ul li
     {
-      margin-right: 14%;
+      margin-right: 8%;
 
     }
+
     .news ul li:last-child
     {
       margin-right: 0;
@@ -510,6 +511,12 @@ footer
     .header
     {
       max-width: 960px;
+    }
+
+    .news ul li
+    {
+      margin-right: 14%;
+
     }
   }
 }
