@@ -1,20 +1,24 @@
 $(document).ready(function(){
 
+  loadImage();
+
+  window.addEventListener('resize', resize)
 
   function loadImage() {
     var preload = new createjs.LoadQueue();
     preload.addEventListener("fileload", handleFileComplete);
-    preload.loadFile("image/slide01 .jpg");
-    console.log('erick')
+    preload.loadFile({src: $("figure.slide .image-to-load").attr("src") });
   }
 
   function handleFileComplete(event) {
-    document.body.appendChild(event.result);
+    resize()
   }
 
+  function resize(){
+    var height = $("figure.slide .image-to-load").height();
+    $('.slide').height(height);  
+  }
 
-  var height = $('.slide img').height();
-  $('.slide').height(height);  
 
   $('.slide img:eq(0)').addClass("ativo").show()
   var texto = $(".ativo").attr("alt");
@@ -84,11 +88,6 @@ $(document).ready(function(){
     }
   }
 
-});
-
-window.addEventListener('resize', function(){
-  var height = $('.slide img').height();
-  $('.slide').height(height);   
 });
 
 
