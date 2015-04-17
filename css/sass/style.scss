@@ -1,0 +1,522 @@
+// Variables //
+
+$mobile:320px;
+$tablet:880px;
+$desktop:1280px;
+
+$padding: 40;
+$total_columns_desktop: 12;
+$total_columns_tablet_vertical: 6;
+$total_columns_mobile: 12;
+$column_width:120;
+
+// responsive //
+
+*, *:before, *:after
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+  .col-mobile-1 { width: unquote(1 / $total_columns_mobile * 100 + "%");  }
+  .col-mobile-2 { width: unquote(2 / $total_columns_mobile * 100 + "%");  }
+  .col-mobile-3 { width: unquote(3 / $total_columns_mobile * 100 + "%");  }
+  .col-mobile-4 { width: unquote(4 / $total_columns_mobile * 100 + "%");  }
+  .col-mobile-5 { width: unquote(5 / $total_columns_mobile * 100 + "%");  }
+  .col-mobile-6 { width: unquote(6 / $total_columns_mobile * 100 + "%");  }
+  .col-mobile-7 { width: unquote(7 / $total_columns_mobile * 100 + "%");  }
+  .col-mobile-8 { width: unquote(8 / $total_columns_mobile * 100 + "%");  }
+  .col-mobile-9 { width: unquote(9 / $total_columns_mobile * 100 + "%");  }
+  .col-mobile-10{ width: unquote(10 / $total_columns_mobile * 100 + "%");  }
+  .col-mobile-11{ width: unquote(11 / $total_columns_mobile * 100 + "%");  }
+  .col-mobile-12{ width: unquote(12 / $total_columns_mobile * 100 + "%");  }
+
+@media screen and (min-width: $tablet)
+{
+  .col-tablet-1 { width: unquote(1 / $total_columns_tablet_vertical * 100 + "%");  }
+  .col-tablet-2 { width: unquote(2 / $total_columns_tablet_vertical * 100 + "%");  }
+  .col-tablet-3 { width: unquote(3 / $total_columns_tablet_vertical * 100 + "%");  }
+  .col-tablet-4 { width: unquote(4 / $total_columns_tablet_vertical * 100 + "%");  }
+  .col-tablet-5 { width: unquote(5 / $total_columns_tablet_vertical * 100 + "%");  }
+  .col-tablet-6 { width: unquote(6 / $total_columns_tablet_vertical * 100 + "%");  }
+  .col-tablet-7 { width: unquote(7 / $total_columns_tablet_vertical * 100 + "%");  }
+  .col-tablet-8 { width: unquote(8 / $total_columns_tablet_vertical * 100 + "%");  }
+  .col-tablet-9 { width: unquote(9 / $total_columns_tablet_vertical * 100 + "%");  }
+  .col-tablet-10{ width: unquote(10 / $total_columns_tablet_vertical * 100 + "%");  }
+  .col-tablet-11{ width: unquote(11 / $total_columns_tablet_vertical * 100 + "%");  }
+  .col-tablet-12{ width: unquote(12 / $total_columns_tablet_vertical * 100 + "%");  }
+}
+
+@media screen and (min-width: $desktop)
+{
+  .col-desktop-1 { width: unquote(1 / $total_columns_desktop * 100 + "%");  }
+  .col-desktop-2 { width: unquote(2 / $total_columns_desktop * 100 + "%");  }
+  .col-desktop-3 { width: unquote(3 / $total_columns_desktop * 100 + "%");  }
+  .col-desktop-4 { width: unquote(4 / $total_columns_desktop * 100 + "%");  }
+  .col-desktop-5 { width: unquote(5 / $total_columns_desktop * 100 + "%");  }
+  .col-desktop-6 { width: unquote(6 / $total_columns_desktop * 100 + "%");  }
+  .col-desktop-7 { width: unquote(7 / $total_columns_desktop * 100 + "%");  }
+  .col-desktop-8 { width: unquote(8 / $total_columns_desktop * 100 + "%");  }
+  .col-desktop-9 { width: unquote(9 / $total_columns_desktop * 100 + "%");  }
+  .col-desktop-10{ width: unquote(10 / $total_columns_desktop * 100 + "%");  }
+  .col-desktop-11{ width: unquote(11 / $total_columns_desktop * 100 + "%");  }
+  .col-desktop-12{ width: unquote(12 / $total_columns_desktop * 100 + "%");  }
+
+}
+
+// mixins
+
+@mixin font-size($sizeValue: 12 )
+{
+  font-size: $sizeValue + px; //fallback for old browsers
+  font-size: ($sizeValue / 16) + rem;
+}
+
+// style 
+
+.wrapper
+{
+  background-color: #ffffff;
+  width: 100%;
+
+  .header
+  {
+    text-align: center;
+    position: relative;
+    // height: 120px;
+    width: 100%;
+  }
+
+  h1.logo-header
+  {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .menu
+  {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .menu > ul > li
+  {
+    @include font-size(13);
+    font-family: 'Myriad Pro';
+    color: #fff;
+    display: inline-block;
+    background-color: #67b6de;
+    width: 90px;
+    height: 50px;
+    position: relative;
+  }
+
+  .menu > ul > li:last-child
+  {
+    @include font-size(13);
+    font-family: 'Myriad Pro';
+    color: #fff;
+    display: inline-block;
+    margin-left: 1px;
+    background-color: #b64c2e;
+    position: relative;
+    width: 100px;
+    height: 50px;
+  }
+
+  .arrow img
+  {
+    margin-left: 5px;
+    margin-bottom: 1px;
+    // float: right;
+    padding: 0;
+  }
+
+  .menu ul li a
+  {
+    position: absolute;
+    left: 0;
+    top: 19px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+  }
+
+  .sub-menu-drop
+  {
+    position: absolute;
+    margin-top: 51px;
+    display: none;
+  }
+
+  .menu > ul > li:last-child:hover .sub-menu-drop
+  {
+    display: block;
+  }
+
+  .sub-menu-drop li
+  {
+    width: 100px;
+    height: 50px;
+    background-color: #ccc;
+    text-align: center;
+    position: relative;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    z-index: 5;
+  }
+
+  .sub-menu-drop li a
+  {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  .slide
+  {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+  .slide img
+  {
+    position: absolute;
+    width: 100%;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .slide p
+  {
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    @include font-size(15);
+    font-family: 'Myriad Pro';
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .content
+  {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .content .main-text h2
+  {
+    @include font-size(20);
+    font-family: 'Myriad Pro';
+    text-align: center;
+    color: #010101;
+    margin-top: 35px;
+  }
+
+  .content .main-text p
+  {
+    @include font-size(16);
+    text-align: center;
+    color: #b8b8b8;
+    margin-top: 25px;
+    font-family: 'Myriad Pro';
+    line-height: 20px;
+  }
+  
+  .news
+  {
+    margin-top: 50px;
+  }
+
+  .news ul
+  {
+    width: 100%;
+  }
+
+  .news ul li
+  {
+    width: 224px;
+    max-width: 224px;
+    display: inline-block;
+  }
+
+  .news ul li img
+  {
+   width: 100%;
+   display: block;
+  }
+
+  .news ul li p 
+  {
+    @include font-size(16);
+    text-align: center;
+    color: #b8b8b8;
+    margin-top: 25px;
+    font-family: 'Myriad Pro';
+    line-height: 20px;
+  }
+
+  .news ul li span
+  {
+    @include font-size(16);
+    font-family: 'Myriad Pro';
+    padding: 15px 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #b64c2e;
+    text-transform: lowercase;
+    display: inline-block;
+  }
+
+  .news ul li span a
+  {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .form
+  {
+    margin: 50px auto 80px auto;
+    max-width: 251px;
+
+  }
+
+  .form .name,.email
+  {
+    @include font-size(16);
+    font-family: 'Myriad Pro';
+    color: #b8b8b8;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .assunto
+  {
+   @include font-size(16);
+   font-family: 'Myriad Pro';
+   color: #b8b8b8;
+   height: 40px;
+   overflow: hidden;
+   width: 100%;
+   border: 1px solid #ccc;
+   background-color: #fff;
+   border-radius: 5px;
+  }
+
+  .assunto select
+  {
+   @include font-size(16);
+   font-family: 'Myriad Pro';
+   color: #b8b8b8;
+   background-color: #fff;
+   border: none;
+   height: 40px;
+   padding: 5px;
+   width: 100%;
+  }
+
+  .form .mensagem
+  {
+    @include font-size(16);
+    font-family: 'Myriad Pro';
+    color: #b8b8b8;
+    padding: 5px;
+    width: 100%;
+    height: 200px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .form .enviar
+  {
+    margin-top: 20px;
+  }
+
+  .share
+  {
+    width: 100%;
+  }
+
+  .share img
+  {
+    width: 100%;
+    max-width: 250px;
+  }
+
+
+}
+
+footer
+{
+  background-color: #747474;
+  text-align: center;
+  padding: 34px 0 31px 0;
+}
+
+@media screen and (min-width: $tablet)
+{
+  .wrapper
+  {
+    text-align: none;
+
+    .header
+    {
+      max-width: 700px;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      height: 120px;
+      position: relative;
+    }
+
+    .header h1.logo-header
+    {
+      margin-top: 39px;
+      margin-left: 244px;
+      position: absolute;
+      float: left;
+      top: 38;
+      left: 0;
+      margin-left: 0;
+    } 
+
+    .header .menu
+    {
+      position: absolute;
+      float: right;
+      right: 0;
+      top: 36;
+    }
+
+    .menu > ul > li:last-child
+    {
+      width: 125px;
+    }
+
+    .sub-menu-drop li
+    {
+      width: 125px;
+    }
+
+    .slide p
+    {
+      z-index: 3;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      @include font-size(25);
+      font-family: 'Myriad Pro';
+      color: #fff;
+      background-color: rgba(0,0,0,0.5);
+    }
+
+    .content
+    {
+      width: 100%;
+      margin-left: 0;
+    }
+    
+    .content .main-text
+    {
+      max-width: 960px;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .content .main-text h2
+    {
+      @include font-size(25);
+    }
+
+    .content .main-text p
+    {
+      @include font-size(18);
+    }
+
+    .content .news
+    {
+      max-width: 960px;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .news ul li
+    {
+      margin-right: 8%;
+
+    }
+
+    .news ul li:last-child
+    {
+      margin-right: 0;
+    }
+
+    .form
+    {
+      max-width: 471px;
+      // margin-left: 25%;
+    }
+
+    .form .name,.email
+    {
+      width: 470px;
+      height: 60px;
+    }
+
+    .form .mensagem
+    {
+      width: 470px;
+      height: 200px;
+    }
+
+    .assunto
+    {
+      width: 470px;
+      height: 60px;
+      margin-left: 0;
+    }
+
+    .assunto select
+    {
+      width: 470px;
+      height: 60px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop)
+{
+  .wrapper
+  {
+    .header
+    {
+      max-width: 960px;
+    }
+
+    .news ul li
+    {
+      margin-right: 14%;
+
+    }
+  }
+}

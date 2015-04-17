@@ -1,0 +1,397 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.col-mobile-1 {
+  width: 8.33333%; }
+
+.col-mobile-2 {
+  width: 16.66667%; }
+
+.col-mobile-3 {
+  width: 25%; }
+
+.col-mobile-4 {
+  width: 33.33333%; }
+
+.col-mobile-5 {
+  width: 41.66667%; }
+
+.col-mobile-6 {
+  width: 50%; }
+
+.col-mobile-7 {
+  width: 58.33333%; }
+
+.col-mobile-8 {
+  width: 66.66667%; }
+
+.col-mobile-9 {
+  width: 75%; }
+
+.col-mobile-10 {
+  width: 83.33333%; }
+
+.col-mobile-11 {
+  width: 91.66667%; }
+
+.col-mobile-12 {
+  width: 100%; }
+
+@media screen and (min-width: 880px) {
+  .col-tablet-1 {
+    width: 16.66667%; }
+
+  .col-tablet-2 {
+    width: 33.33333%; }
+
+  .col-tablet-3 {
+    width: 50%; }
+
+  .col-tablet-4 {
+    width: 66.66667%; }
+
+  .col-tablet-5 {
+    width: 83.33333%; }
+
+  .col-tablet-6 {
+    width: 100%; }
+
+  .col-tablet-7 {
+    width: 116.66667%; }
+
+  .col-tablet-8 {
+    width: 133.33333%; }
+
+  .col-tablet-9 {
+    width: 150%; }
+
+  .col-tablet-10 {
+    width: 166.66667%; }
+
+  .col-tablet-11 {
+    width: 183.33333%; }
+
+  .col-tablet-12 {
+    width: 200%; } }
+@media screen and (min-width: 1280px) {
+  .col-desktop-1 {
+    width: 8.33333%; }
+
+  .col-desktop-2 {
+    width: 16.66667%; }
+
+  .col-desktop-3 {
+    width: 25%; }
+
+  .col-desktop-4 {
+    width: 33.33333%; }
+
+  .col-desktop-5 {
+    width: 41.66667%; }
+
+  .col-desktop-6 {
+    width: 50%; }
+
+  .col-desktop-7 {
+    width: 58.33333%; }
+
+  .col-desktop-8 {
+    width: 66.66667%; }
+
+  .col-desktop-9 {
+    width: 75%; }
+
+  .col-desktop-10 {
+    width: 83.33333%; }
+
+  .col-desktop-11 {
+    width: 91.66667%; }
+
+  .col-desktop-12 {
+    width: 100%; } }
+.wrapper {
+  background-color: #ffffff;
+  width: 100%; }
+  .wrapper .header {
+    text-align: center;
+    position: relative;
+    width: 100%; }
+  .wrapper h1.logo-header {
+    display: block;
+    margin-top: 20px; }
+  .wrapper .menu {
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .wrapper .menu > ul > li {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    font-family: 'Myriad Pro';
+    color: #fff;
+    display: inline-block;
+    background-color: #67b6de;
+    width: 90px;
+    height: 50px;
+    position: relative; }
+  .wrapper .menu > ul > li:last-child {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    font-family: 'Myriad Pro';
+    color: #fff;
+    display: inline-block;
+    margin-left: 1px;
+    background-color: #b64c2e;
+    position: relative;
+    width: 100px;
+    height: 50px; }
+  .wrapper .arrow img {
+    margin-left: 5px;
+    margin-bottom: 1px;
+    padding: 0; }
+  .wrapper .menu ul li a {
+    position: absolute;
+    left: 0;
+    top: 19px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    width: 100%; }
+  .wrapper .sub-menu-drop {
+    position: absolute;
+    margin-top: 51px;
+    display: none; }
+  .wrapper .menu > ul > li:last-child:hover .sub-menu-drop {
+    display: block; }
+  .wrapper .sub-menu-drop li {
+    width: 100px;
+    height: 50px;
+    background-color: #ccc;
+    text-align: center;
+    position: relative;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    z-index: 5; }
+  .wrapper .sub-menu-drop li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    width: 100%; }
+  .wrapper .slide {
+    overflow: hidden;
+    width: 100%;
+    position: relative; }
+  .wrapper .slide img {
+    position: absolute;
+    width: 100%;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 2; }
+  .wrapper .slide p {
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    font-family: 'Myriad Pro';
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .wrapper .content {
+    padding: 20px;
+    text-align: center; }
+  .wrapper .content .main-text h2 {
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-family: 'Myriad Pro';
+    text-align: center;
+    color: #010101;
+    margin-top: 35px; }
+  .wrapper .content .main-text p {
+    font-size: 16px;
+    font-size: 1rem;
+    text-align: center;
+    color: #b8b8b8;
+    margin-top: 25px;
+    font-family: 'Myriad Pro';
+    line-height: 20px; }
+  .wrapper .news {
+    margin-top: 50px; }
+  .wrapper .news ul {
+    width: 100%; }
+  .wrapper .news ul li {
+    width: 224px;
+    max-width: 224px;
+    display: inline-block; }
+  .wrapper .news ul li img {
+    width: 100%;
+    display: block; }
+  .wrapper .news ul li p {
+    font-size: 16px;
+    font-size: 1rem;
+    text-align: center;
+    color: #b8b8b8;
+    margin-top: 25px;
+    font-family: 'Myriad Pro';
+    line-height: 20px; }
+  .wrapper .news ul li span {
+    font-size: 16px;
+    font-size: 1rem;
+    font-family: 'Myriad Pro';
+    padding: 15px 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #b64c2e;
+    text-transform: lowercase;
+    display: inline-block; }
+  .wrapper .news ul li span a {
+    text-decoration: none;
+    color: #fff; }
+  .wrapper .form {
+    margin: 50px auto 80px auto;
+    max-width: 251px; }
+  .wrapper .form .name, .wrapper .email {
+    font-size: 16px;
+    font-size: 1rem;
+    font-family: 'Myriad Pro';
+    color: #b8b8b8;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px; }
+  .wrapper .assunto {
+    font-size: 16px;
+    font-size: 1rem;
+    font-family: 'Myriad Pro';
+    color: #b8b8b8;
+    height: 40px;
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px; }
+  .wrapper .assunto select {
+    font-size: 16px;
+    font-size: 1rem;
+    font-family: 'Myriad Pro';
+    color: #b8b8b8;
+    background-color: #fff;
+    border: none;
+    height: 40px;
+    padding: 5px;
+    width: 100%; }
+  .wrapper .form .mensagem {
+    font-size: 16px;
+    font-size: 1rem;
+    font-family: 'Myriad Pro';
+    color: #b8b8b8;
+    padding: 5px;
+    width: 100%;
+    height: 200px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc; }
+  .wrapper .form .enviar {
+    margin-top: 20px; }
+  .wrapper .share {
+    width: 100%; }
+  .wrapper .share img {
+    width: 100%;
+    max-width: 250px; }
+
+footer {
+  background-color: #747474;
+  text-align: center;
+  padding: 34px 0 31px 0; }
+
+@media screen and (min-width: 880px) {
+  .wrapper {
+    text-align: none; }
+    .wrapper .header {
+      max-width: 700px;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      height: 120px;
+      position: relative; }
+    .wrapper .header h1.logo-header {
+      margin-top: 39px;
+      margin-left: 244px;
+      position: absolute;
+      float: left;
+      top: 38;
+      left: 0;
+      margin-left: 0; }
+    .wrapper .header .menu {
+      position: absolute;
+      float: right;
+      right: 0;
+      top: 36; }
+    .wrapper .menu > ul > li:last-child {
+      width: 125px; }
+    .wrapper .sub-menu-drop li {
+      width: 125px; }
+    .wrapper .slide p {
+      z-index: 3;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      font-size: 25px;
+      font-size: 1.5625rem;
+      font-family: 'Myriad Pro';
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5); }
+    .wrapper .content {
+      width: 100%;
+      margin-left: 0; }
+    .wrapper .content .main-text {
+      max-width: 960px;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto; }
+    .wrapper .content .main-text h2 {
+      font-size: 25px;
+      font-size: 1.5625rem; }
+    .wrapper .content .main-text p {
+      font-size: 18px;
+      font-size: 1.125rem; }
+    .wrapper .content .news {
+      max-width: 960px;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto; }
+    .wrapper .news ul li {
+      margin-right: 8%; }
+    .wrapper .news ul li:last-child {
+      margin-right: 0; }
+    .wrapper .form {
+      max-width: 471px; }
+    .wrapper .form .name, .wrapper .email {
+      width: 470px;
+      height: 60px; }
+    .wrapper .form .mensagem {
+      width: 470px;
+      height: 200px; }
+    .wrapper .assunto {
+      width: 470px;
+      height: 60px;
+      margin-left: 0; }
+    .wrapper .assunto select {
+      width: 470px;
+      height: 60px; } }
+@media screen and (min-width: 1280px) {
+  .wrapper .header {
+    max-width: 960px; }
+  .wrapper .news ul li {
+    margin-right: 14%; } }
+
+/*# sourceMappingURL=style.css.map */
